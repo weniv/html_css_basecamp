@@ -1,0 +1,52 @@
+/* common css */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    vertical-align: top;
+}
+
+/*inline-block 은 inline 요소의 width, height 값 조절을 위해, position:absolute 는 노멀 플로우에서 요소의 위치를 지우기 위해*/
+.a11y {
+    display: inline-block;
+    position: absolute;
+    overflow: hidden;
+    width: 1px;
+    height: 1px;
+    border: 0;
+    clip-path: inset(50%);
+}
+
+/* 공통 주황 버튼 */
+.btn-common {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #D97652;
+    border-radius: 40px;
+    color: #fff;
+}
